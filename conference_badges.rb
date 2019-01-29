@@ -7,4 +7,5 @@ def batch_badge_creator(array)
   array.each do |speaker|
     batch_badge<<badge_maker(speaker)
   end
+  return batch_badge
 end
