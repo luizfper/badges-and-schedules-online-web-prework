@@ -21,6 +21,12 @@ def assign_rooms (speakers)
 end
 
 def printer(speakers)
-  puts batch_badge_creator(speakers)
-  puts assign_rooms(speakers)
+  badges =[]
+  badges = batch_badge_creator(speakers)
+  rooms=[]
+  rooms= assign_rooms(speakers)
+  badges.each do|badge|
+    puts badge
+    puts rooms[badges.index(badge)]
+  end  
 end
