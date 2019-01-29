@@ -28,5 +28,5 @@ def printer(speakers)
   badges.each do|badge|
     puts badge
     puts rooms[badges.index(badge)]
-  end  
+  end
 end
