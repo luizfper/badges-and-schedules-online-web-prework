@@ -9,3 +9,12 @@ def batch_badge_creator(array)
   end
   return batch_badge
 end
+
+def assign_rooms (speakers)
+  room = 7
+  assignments = []
+  speakers.each do |speaker|
+    assignments<<"Hello, #{speaker}! You'll be assigned to room #{room}!"
+    room+=1
+  end
+end
